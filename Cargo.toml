@@ -1,0 +1,21 @@
+[package]
+name = "install_app_and_memproof"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+holochain_types = {version = "0.4.0-dev.7", features = ["chc"]}
+holochain_conductor_api = { version = "0.4.0-dev.7", features = ["chc"]}
+holochain_keystore = { version = "0.4.0-dev.7" }
+holochain_websocket = { version = "0.4.0-dev.7"}
+holochain_p2p = { version = "0.4.0-dev.7" }
+mr_bundle = { version = "0.4.0-dev.2" }
+lair_keystore_api = "0.4.4"
+holo_hash = "0.4.0-dev.5"
+holochain_client = "0.6.0-dev.1"
+hpos_connect_hc = { git = "https://github.com/Holo-Host/hpos-service-crates/", package = "hpos_hc_connect" , rev = "dae4608e24434a1082d48be4020b0753d4c0e3f4" }
+tokio = { version = "1.36.0", features = ["rt-multi-thread", "macros", "full", "rt"] }
+tokio-tungstenite = "0.21.0"
+anyhow = "1.0.86"
