@@ -3,6 +3,7 @@ use std::net::ToSocketAddrs;
 use holochain_client::{AdminWebsocket, AppAuthenticationTokenIssued, AppWebsocket, IssueAppAuthenticationTokenPayload};
 use anyhow::Result;
 
+// the installed_app_id of the single hosted happ in holo dev server
 pub const HDS_HOSTED_HAPP_ID: &str = "uhCkkCQHxC8aG3v3qwD_5Velo1IHE1RdxEr9-tuNSK15u63m1LPOo";
 
 #[tokio::main]
